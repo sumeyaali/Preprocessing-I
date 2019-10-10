@@ -1,1 +1,297 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* CSS Styling for Resume starts here */
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #FFEFD5;
+}
+.top-section {
+  background-color: peachpuff;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  font-size: 80px;
+}
+.top-section nav a {
+  font-size: 2rem;
+  padding-right: 9rem;
+  text-decoration: none;
+  color: black;
+}
+.top-section nav:hover a {
+  color: #B22222;
+}
+.middle-section {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+.middle-section h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-left: 20%;
+}
+.middle-section .me {
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+.middle-section .head-pic {
+  margin-top: 70px;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+.middle-section .intro-p {
+  border: 1px solid black;
+  margin-right: 50px;
+  width: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.middle-section .intro-p,
+.middle-section h2 {
+  font-size: 20px;
+}
+.middle-section .intro,
+.middle-section .about {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.bottom-section {
+  border: 1px solid blue;
+}
+.bottom-section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 99%;
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+footer footer,
+footer p {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+footer footer,
+footer h1 {
+  font-size: 3rem;
+}
+footer footer,
+footer h2 {
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-right: 15%;
+}
+footer .contact h3 {
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+footer .contact {
+  border: 1px solid black;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+@media (Max-width: 500px) {
+  nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    padding-bottom: 1rem;
+  }
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-section .me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .middle-section .intro-p {
+    flex-direction: column;
+    margin-left: 5rem;
+    border: 1px solid red;
+  }
+  .intro-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .bottom-section div {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .middle div {
+    border: 1px solid orange;
+    margin-top: 2rem;
+  }
+  footer div {
+    width: 100%;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}
